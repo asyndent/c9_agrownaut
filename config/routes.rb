@@ -8,6 +8,9 @@ Rails.application.routes.draw do
   
   get 'current_temperature' => 'welcome#current_temperature'
   get 'number_of_readings/:id' => 'customer#number_of_readings'
+  get 'average_temperature' => 'statistics#average_temperature'
+  get 'maximum_temperature' => 'statistics#maximum_temperature'
+  get 'customer_low_high/:id' => 'statistics#customer_low_high'
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 

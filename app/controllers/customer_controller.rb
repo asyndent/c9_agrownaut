@@ -7,10 +7,9 @@ class CustomerController < ApplicationController
   #TODO
   # display the number of log readings a customer has associated
   def number_of_readings
-    
+    @id = Customer.find(params[:id]).name
     @num_readings = Customer.find(params[:id]).temperatures.count()
     
-    render :html => @num_readings.to_s
   end
 
 end
