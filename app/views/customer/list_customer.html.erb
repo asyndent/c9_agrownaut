@@ -1,0 +1,6 @@
+List of customers: 
+<br>
+<% for customer in @list_customer %>
+<%= link_to customer.name, {:id => customer.id, :action => 'customer_data'} %>
+<br>
+<% end %>

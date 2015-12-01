@@ -1,0 +1,7 @@
+Enter the name of a new customer: 
+<br>
+<%= form_tag("/create_customer", method: "post") do %>
+  <%= label_tag(:customer, "Customer name:") %>
+  <%= text_field_tag(:customer) %>
+  <%= submit_tag("Create Customer") %>
+<% end %>

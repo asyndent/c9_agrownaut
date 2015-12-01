@@ -1,0 +1,9 @@
+List of temperatures for <%= @customer.name %>:
+
+<br>
+<% for temperature in @customer.temperatures %>
+<%= temperature.temperature %>
+<br>
+<% end %>
+
+TODO: In this page we want to be able to add new temperature readings for this customer.

@@ -11,6 +11,13 @@ Rails.application.routes.draw do
   get 'average_temperature' => 'statistics#average_temperature'
   get 'maximum_temperature' => 'statistics#maximum_temperature'
   get 'customer_low_high/:id' => 'statistics#customer_low_high'
+  
+  get 'create_customer' => 'customer#create_customer'
+  post 'create_customer' => 'customer#create_customer'
+  get 'list_customer' => 'customer#list_customer'
+  get 'customer_data' => 'customer#customer_data'
+  
+  
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 
