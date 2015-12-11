@@ -27,6 +27,19 @@ class CustomerController < ApplicationController
   def customer_data
     @customer = Customer.find(params[:id])
   end
+  
+  def remove
+    Customer.find(params[:id]).destroy
+end
+
+def update_customer
+    @customer = Customer.find(params[:id])
+      render @customer
+      
+      
+    end
+end 
+
 
   # TODO we want to be able to delete a customer
   
@@ -34,5 +47,3 @@ class CustomerController < ApplicationController
   
   # TODO we want to be able to delete 
   # individual temperature readings
-
-end
