@@ -16,6 +16,19 @@ Rails.application.routes.draw do
   post 'create_customer' => 'customer#create_customer'
   get 'list_customer' => 'customer#list_customer'
   get 'customer_data' => 'customer#customer_data'
+  get 'remove' => 'customer#remove'
+  post 'remove' => 'customer#remove'
+  
+  get 'update_customer' => 'customer#update_customer'
+  post 'update_customer' => 'customer#update_customer'
+  get 'destroy' => 'customer#destroy'
+  post 'destroy' => 'customer#destroy'
+  
+  get 'create_temp' => 'customer#create_temp'
+  post 'create_temp' => 'customer#create_temp'
+  
+  get 'delete' => 'customer#delete'
+  
   
   
   # Example of regular route:

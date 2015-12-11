@@ -1,6 +1,9 @@
 List of customers: 
 <br>
 <% for customer in @list_customer %>
-<%= link_to customer.name, {:id => customer.id, :action => 'customer_data'} %>
 <br>
+<br>
+<%= link_to customer.name, {:id => customer.id, :action => 'customer_data'} %>
+    | <%= link_to "Delete Customer", { :id => customer.id, :action => 'delete'} %>
+  
 <% end %>

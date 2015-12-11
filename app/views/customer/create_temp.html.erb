@@ -1,0 +1,7 @@
+Add New Temperature
+<%= form_tag("/create_temp", method: "post") do %>
+  <%= label_tag(:temp, "New Temperature:") %>
+  <%= text_field_tag(:temp) %>
+  <%= submit_tag("Submit") %>
+  <%= hidden_field_tag :id, params[:id] %>
+  <% end %>
