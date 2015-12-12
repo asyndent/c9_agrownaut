@@ -21,6 +21,7 @@ Rails.application.routes.draw do
   
   get 'update_customer' => 'customer#update_customer'
   post 'update_customer' => 'customer#update_customer'
+<<<<<<< HEAD
   get 'destroy' => 'customer#destroy'
   post 'destroy' => 'customer#destroy'
   
@@ -28,6 +29,8 @@ Rails.application.routes.draw do
   post 'create_temp' => 'customer#create_temp'
   
   get 'delete' => 'customer#delete'
+=======
+>>>>>>> f71fdf658606582fb7494bb70a2555e08bbe70b7
   
   
   

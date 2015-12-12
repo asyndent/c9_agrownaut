@@ -30,6 +30,7 @@ class CustomerController < ApplicationController
   
   def remove
     Customer.find(params[:id]).destroy
+<<<<<<< HEAD
   end
   
   def create_temp
