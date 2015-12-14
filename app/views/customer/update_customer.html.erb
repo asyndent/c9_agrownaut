@@ -1,0 +1,8 @@
+Update Custmer Name: 
+<br>
+<%= form_tag("/update_customer", method: "post") do %>
+  <%= label_tag(:name, " New customer name:") %>
+  <%= text_field_tag(:name) %>
+  <%= submit_tag("Submit") %>
+  <%= hidden_field_tag :id, params[:id] %>
+<% end %>

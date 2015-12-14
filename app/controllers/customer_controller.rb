@@ -28,11 +28,28 @@ class CustomerController < ApplicationController
     @customer = Customer.find(params[:id])
   end
 
+  def add_temperature
+    if request.post?  
+      t = Temperature.new()
+      t.temperature = params[:temperature]
+      t.customer_id = params[:id]
+      t.save
+      
+      redirect_to :action => "customer_data", :id => params[:id]
+    end
+  end
+
+  def delete_customer
+      @delete_customer = Customer.destroy()
+  end
+
   # TODO we want to be able to delete a customer
   
   # TODO we want to change a customer's name
   
   # TODO we want to be able to delete 
   # individual temperature readings
+  
+
 
 end

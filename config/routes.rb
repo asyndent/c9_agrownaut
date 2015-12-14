@@ -16,6 +16,9 @@ Rails.application.routes.draw do
   post 'create_customer' => 'customer#create_customer'
   get 'list_customer' => 'customer#list_customer'
   get 'customer_data' => 'customer#customer_data'
+  post 'customer_data' => 'customer#customer_data'
+  get 'add_temperature' => 'customer#add_temperature'
+  post 'add_temperature' => 'customer#add_temperature'
   
   
   # Example of regular route:

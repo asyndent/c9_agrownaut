@@ -7,3 +7,12 @@ List of temperatures for <%= @customer.name %>:
 <% end %>
 
 TODO: In this page we want to be able to add new temperature readings for this customer.
+
+Enter a new temperature for this customer: 
+<br>
+<%= form_tag("/add_temperature", method: "post") do %>
+  <%= label_tag(:temperature, "Temperature:") %>
+  <%= text_field_tag(:temperature) %>
+  <%= submit_tag("Add Temperature") %>
+  <%= hidden_field_tag :id, params[:id] %>
+<% end %>
