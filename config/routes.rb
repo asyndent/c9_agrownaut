@@ -17,6 +17,7 @@ Rails.application.routes.draw do
   get 'list_customer' => 'customer#list_customer'
   get 'customer_data' => 'customer#customer_data'
 <<<<<<< HEAD
+<<<<<<< HEAD
   post 'customer_data' => 'customer#customer_data'
   get 'add_temperature' => 'customer#add_temperature'
   post 'add_temperature' => 'customer#add_temperature'
@@ -38,6 +39,8 @@ Rails.application.routes.draw do
 >>>>>>> f71fdf658606582fb7494bb70a2555e08bbe70b7
   
 >>>>>>> origin/master
+=======
+>>>>>>> parent of eee8d6c... tedbranchcode
   
   
   # Example of regular route:
