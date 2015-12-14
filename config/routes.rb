@@ -16,9 +16,28 @@ Rails.application.routes.draw do
   post 'create_customer' => 'customer#create_customer'
   get 'list_customer' => 'customer#list_customer'
   get 'customer_data' => 'customer#customer_data'
+<<<<<<< HEAD
   post 'customer_data' => 'customer#customer_data'
   get 'add_temperature' => 'customer#add_temperature'
   post 'add_temperature' => 'customer#add_temperature'
+=======
+  get 'remove' => 'customer#remove'
+  post 'remove' => 'customer#remove'
+  
+  get 'update_customer' => 'customer#update_customer'
+  post 'update_customer' => 'customer#update_customer'
+<<<<<<< HEAD
+  get 'destroy' => 'customer#destroy'
+  post 'destroy' => 'customer#destroy'
+  
+  get 'create_temp' => 'customer#create_temp'
+  post 'create_temp' => 'customer#create_temp'
+  
+  get 'delete' => 'customer#delete'
+=======
+>>>>>>> f71fdf658606582fb7494bb70a2555e08bbe70b7
+  
+>>>>>>> origin/master
   
   
   # Example of regular route:

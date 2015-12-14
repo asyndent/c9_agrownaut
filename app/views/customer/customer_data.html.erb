@@ -1,10 +1,13 @@
 List of temperatures for <%= @customer.name %>:
-
+<br>
+<%= link_to "Update Customer Name", {:id => params[:id],:action => 'update_customer'} %>
 <br>
 <% for temperature in @customer.temperatures %>
 <%= temperature.temperature %>
-<br>
 <% end %>
+<br>
+<%= link_to "New Temp", {:id => params[:id],:action => 'create_temp'} %>
+<br>
 
 TODO: In this page we want to be able to add new temperature readings for this customer.
 
